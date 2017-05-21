@@ -6,10 +6,10 @@ extern crate log;
 
 mod primes;
 mod collect;
-mod p15;
+mod p16;
 
 fn main() {
-  p15::solve();
+  p16::solve();
 }
 
 
