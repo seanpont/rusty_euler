@@ -12,9 +12,10 @@ mod p14;
 mod p15;
 mod p16;
 mod p17;
+mod p18;
 
 fn main() {
-  p17::solve();
+  p18::solve();
 }
 
 
