@@ -26,7 +26,7 @@ pub fn solve() {
     let (a, b) = if n % 2 == 0 { (n/2, n+1) } else { (n, (n + 1) / 2) };
     let mut pf = sieve.factorize(a);
     pf.extend(sieve.factorize(b));
-    let num_divisors = collect::count_map(&pf).values().map(|x| x+1).product::<i64>();
+    let num_divisors = collect::count_map(&pf).values().map(|x| x+1).product::<u64>();
     if num_divisors > max_divisors {
       println!("{} has {} divisors", (n * (n + 1) / 2), num_divisors);
       max_divisors = num_divisors;
